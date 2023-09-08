@@ -1,6 +1,6 @@
  
 const apiKey = '6064cb3ca00f9837f19bba921ebdffa6'; 
-const apiUrl = `https://openweather43.p.rapidapi.com/weather?q=delhi&units=standard`;
+const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=germany&appid=6064cb3ca00f9837f19bba921ebdffa6&units=standard`;
 
 const searchBox=document.querySelector(".search input");
 const searchBtn=document.querySelector(".search button");
