@@ -1,86 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Now</title>
-    <link href="styles.css" rel="stylesheet" >
-
-
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  </head>
   <body>
     <div class="navbar">
-
-      
-        <video autoplay muted loop plays-inline clas="back-video">
-          <source src="media/sea.mp4" type="video/mp4" />
-        </video>
+      <video autoplay muted loop class="back-video">
+        <source src="media/sea.mp4" type="video/mp4" />
+      </video>
 
       <nav>
         <div class="logo-container">
-        <img src="media/weather.png" class="logo">
-        <h3 class="maintext">Weather Now</h3>
+          <img src="media/weather.png" class="logo" />
+          <h3 class="maintext">Weather Now</h3>
         </div>
-      
-        <ul class="ul">
-          <li><a href="#">HOME&nbsp;&nbsp;</a></li>
-          <li><a href="#">ABOUT&nbsp;&nbsp;</a></li>
-          <li><a href="#">CONTACT US</a></li>
+
+        <ul class="nav-links">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">CONTACT</a></li>
         </ul>
       </nav>
-      
 
-     
-    </div>
-    <div class="card">
-      <div class="search">
-        <input type="text" placeholder="Enter city" spellcheck="false">
-        <button>Search</button>
-      </div>
-      <div class="weather">
-        <img src="media/rain.png" class="weathericon">
-        <h1 class="temp"> 14°C</h1>
-        <h2 class="city"> Kanpur</h2>
+      <div class="card">
+        <div class="search">
+          <input type="text" placeholder="Enter city" spellcheck="false" />
+          <button>🔍</button>
+        </div>
 
+        <div class="weather">
+          <img src="media/rain.png" class="weathericon" />
+          <h1 class="temp">14°C</h1>
+          <h2 class="city">Kanpur</h2>
 
-        <div class="details">
-          <div class="column">
-            <img src="media/humidity2.jpg">
-            <div>
-              <p class="para">50%</p>
-              <p>Humidity</p>
+          <div class="details">
+            <div class="column">
+              <img src="media/humidity2.jpg" />
+              <div>
+                <p class="para">50%</p>
+                <p>Humidity</p>
+              </div>
             </div>
-          </div>
-          
-          <div class="column">
-            <img src="media/sunrise.png">
-            <div>
-              <p class="para">5:00 AM</p>
-              <p>Sunrise</p>
-            </div>
-          </div>
 
-          <div class="column">
-            <img src="media/sunset.png">
-              <p class="para">6:00 PM</p>
-              <p>Sunset</p>
+            <div class="column">
+              <img src="media/sunrise.png" />
+              <div>
+                <p class="para">5:00 AM</p>
+                <p>Sunrise</p>
+              </div>
+            </div>
+
+            <div class="column">
+              <img src="media/sunset.png" />
+              <div>
+                <p class="para">6:00 PM</p>
+                <p>Sunset</p>
+              </div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
 
-    
-
-    
-
-
-
-
-   
-
- 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="app.js"></script>
   </body>
 </html>

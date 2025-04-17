@@ -74,45 +74,42 @@ nav ul li a{
     z-index: -1;
   }
 
-  .card{
+  .card {
     width: 90%;
     max-width: 470px;
     background: linear-gradient(135deg, #dfee0e, #6c6c2d);
     color: #fff;
-    margin: 50px auto 0;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
-    top:2px;
-    left:550px;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 2;
-
-  .search{
-    width:100%;
-    display:flex;
+  }
+  
+  .search {
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    
-
   }
-
-  .search input{
+  
+  .search input {
     border: 0;
     outline: 0;
     background: #ebfffc;
-    color:#555;
-    padding:10px 25px;
+    color: #555;
+    padding: 10px 25px;
     height: 60px;
     border-radius: 30px;
     flex: 1;
     margin-right: 16px;
     font-size: 18px;
-
-
   }
-
-  .search button{
+  
+  .search button {
     border: 0;
     outline: 0;
     background: #ebfffc;
@@ -120,49 +117,63 @@ nav ul li a{
     height: 60px;
     border-radius: 50%;
     cursor: pointer;
-  
   }
-.weathericon{
-  width:150px;
-  margin-top: 30px;
-
-
-}
-.weather h1{
-  font-size: 80px;
-  font-weight: 500;
-
-}
-.weather h2{
-  font-size: 45px;
-  font-weight: 400;
-  margin-top:-10px;
-
-}
-
-.details{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  margin-top: 50px;
-
-}
-.column{
-  display: flex;
-  align-items: centre;
-  text-align: left;
-}
-
-.column img{  
-  width: 5vh;
-  margin-right:10px ;
   
+  .weathericon {
+    width: 150px;
+    margin-top: 30px;
+  }
   
-}
-.para{
-  font-size: 15px;
-}
-}
+  .weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+  }
+  
+  .weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+  }
+  
+  .details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 30px;
+  }
+  
+  .column {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 30%;
+    min-width: 120px;
+  }
+  
+  .column img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .para {
+    font-size: 15px;
+  }
+  
+  /* Responsive adjustment for smaller screens */
+  @media screen and (max-width: 600px) {
+    .details {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .column {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  
 
 
